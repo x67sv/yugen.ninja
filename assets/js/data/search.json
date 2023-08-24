@@ -1,6 +1,23 @@
 [
   
   {
+    "title": "Directory Scanner Nuclei Template",
+    "url": "/posts/directory-scanner-nuclei-template/",
+    "categories": "Dev, Web",
+    "tags": "nuclei, fuzzing",
+    "date": "2023-08-24 00:00:00 +0300",
+    
+
+
+
+
+
+    
+    "snippet": "Dirbuster, ffuf veya diğer dizin tarama araçlarının yaptığı işin aynısı olacak. Tek fark nuclei yapısı altında yaml dosyası ve wordlist kullanarak yapacağız. Hah bir de recursive degil su an  Wordl...",
+    "content": "Dirbuster, ffuf veya diğer dizin tarama araçlarının yaptığı işin aynısı olacak. Tek fark nuclei yapısı altında yaml dosyası ve wordlist kullanarak yapacağız. Hah bir de recursive degil su an  Wordlist için Seclist kullanılabilir.empire➜  nuclei  ᐅ  cat directory-scanner.yamlid: DirectoryScanner # yaml IDinfo:  name: Directory Scanner   author: Yugen  severity: low # sonuclarin onem derecesirequests:  - method: GET    path:      - \"/\"     payloads:        fuzz: Wordlists/SecLists/Discovery/Web-Content/big.txt # wordlistin yolu    threads: 50 # tek seferde 50 request    matchers:      - type: status # status 301,200 veya 403 donerse low severity de ekrana sonucu bas        status:          - 301          - 200          - 403empire➜  nuclei  ᐅ  nuclei -t directory-scanner.yaml -u localhost  -silent[DirectoryScanner] [http] [low] http://localhost/.profile [fuzz=\".profile\"][DirectoryScanner] [http] [low] http://localhost/.ssh [fuzz=\".ssh\"][DirectoryScanner] [http] [low] http://localhost/.bash_history [fuzz=\".bash_history\"][DirectoryScanner] [http] [low] http://localhost/Music [fuzz=\"Music\"][DirectoryScanner] [http] [low] http://localhost/Research [fuzz=\"Research\"][DirectoryScanner] [http] [low] http://localhost/app [fuzz=\"app\"][DirectoryScanner] [http] [low] http://localhost/applications [fuzz=\"applications\"][DirectoryScanner] [http] [low] http://localhost/certs [fuzz=\"certs\"]"
+  },
+  
+  {
     "title": "Backdooring",
     "url": "/posts/backdooring/",
     "categories": "persistence",

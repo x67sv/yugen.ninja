@@ -42,10 +42,10 @@
 <meta property="og:title" content="responder &amp; ntlmrelay" />
 <meta name="author" content="yugen" />
 <meta property="og:locale" content="en" />
-<meta name="description" content="Temelde mDNS yapısının istismarı ile gelişir. Client bir paylaşıma erişmek için mDNS kullanılır. Çünkü client tarafında DNS ayarları yapılandırılmamıştır ve yerel ağda da bu işi üstlenecek bir DNS Server yapılandırılmamıştır. Hal böyle iken mDNS bu görevi üstlenir ve hub gibi tüm networke paylaşım adı olarak girilen verinin kimde olduğunu gönderir. Saldırgan bu trafiğe yanıt verir ve kurban credential girer. Girilen credsin NTLMv2 hali saldırgana iletilir. Bu hash bruteforce ile kırılabilir veya yerel ağda SMB relay yapılabilir. Sonucunda kullanıcı hashleri elde edilir ve networkte lateral movement gerçekleştirilir. Ancak buradaki önemli nokta, ntlmv2 hashin elde edildiği orijinal hedefe aynı hash ile saldırının gerçekleştirilmemesi. Çünkü istemci hangi challenge yolladığını ve beklediği challenge değerini saklamaktadır. İletilen challenge değeri responder tarafından ayarlanabilir veya random bırakılabilir. Ancak bunu tutturmak yürüyerek aya gitmekten daha zordur. Dolayısı ile bir hedeften gelen hash verisini o hedef hariç tüm smb signing false olarak konfigüre edilen hedeflere relaylemek en mantıklısıdır. 1 2 1337@empire:~$ crackmapexec smb 192.168.1.50 SMB 192.168.1.50 445 WIN-507CQFD84EB [*] Windows 10.0 Build 17763 x64 (name:WIN-507CQFD84EB) (domain:OFFENSIVE.LOCAL) (signing:True) (SMBv1:False) Domain Controller makinesinde signing:True olarak ayarlanmış." />
-<meta property="og:description" content="Temelde mDNS yapısının istismarı ile gelişir. Client bir paylaşıma erişmek için mDNS kullanılır. Çünkü client tarafında DNS ayarları yapılandırılmamıştır ve yerel ağda da bu işi üstlenecek bir DNS Server yapılandırılmamıştır. Hal böyle iken mDNS bu görevi üstlenir ve hub gibi tüm networke paylaşım adı olarak girilen verinin kimde olduğunu gönderir. Saldırgan bu trafiğe yanıt verir ve kurban credential girer. Girilen credsin NTLMv2 hali saldırgana iletilir. Bu hash bruteforce ile kırılabilir veya yerel ağda SMB relay yapılabilir. Sonucunda kullanıcı hashleri elde edilir ve networkte lateral movement gerçekleştirilir. Ancak buradaki önemli nokta, ntlmv2 hashin elde edildiği orijinal hedefe aynı hash ile saldırının gerçekleştirilmemesi. Çünkü istemci hangi challenge yolladığını ve beklediği challenge değerini saklamaktadır. İletilen challenge değeri responder tarafından ayarlanabilir veya random bırakılabilir. Ancak bunu tutturmak yürüyerek aya gitmekten daha zordur. Dolayısı ile bir hedeften gelen hash verisini o hedef hariç tüm smb signing false olarak konfigüre edilen hedeflere relaylemek en mantıklısıdır. 1 2 1337@empire:~$ crackmapexec smb 192.168.1.50 SMB 192.168.1.50 445 WIN-507CQFD84EB [*] Windows 10.0 Build 17763 x64 (name:WIN-507CQFD84EB) (domain:OFFENSIVE.LOCAL) (signing:True) (SMBv1:False) Domain Controller makinesinde signing:True olarak ayarlanmış." />
-<link rel="canonical" href="http://192.168.1.40:4000/posts/responder-ve-ntlmrelay/" />
-<meta property="og:url" content="http://192.168.1.40:4000/posts/responder-ve-ntlmrelay/" />
+<meta name="description" content="Temelde mDNS yapısının istismarı ile gelişir. Client bir paylaşıma erişmek için mDNS kullanılır. Çünkü client tarafında DNS ayarları yapılandırılmamıştır ve yerel ağda da bu işi üstlenecek bir DNS Server yapılandırılmamıştır. Hal böyle iken mDNS bu görevi üstlenir ve hub gibi tüm networke paylaşım adı olarak girilen verinin kimde olduğunu gönderir. Saldırgan bu trafiğe yanıt verir ve kurban credential girer. Girilen credsin NTLMv2 hali saldırgana iletilir. Bu hash bruteforce ile kırılabilir veya yerel ağda SMB relay yapılabilir. Sonucunda kullanıcı hashleri elde edilir ve networkte lateral movement gerçekleştirilir. Ancak buradaki önemli nokta, ntlmv2 hashin elde edildiği orijinal hedefe aynı hash ile saldırının gerçekleştirilmemesi. Çünkü istemci hangi challange yolladığını ve beklediği challange değerini saklamaktadır. İletilen challange değeri responder tarafından ayarlanabilir veya random bırakılabilir. Ancak bunu tutturmak yürüyerek aya gitmekten daha zordur. Dolayısı ile bir hedeften gelen hash verisini o hedef hariç tüm smb signing false olarak konfigüre edilen hedeflere relaylemek en mantıklısıdır. 1 2 1337@empire:~$ crackmapexec smb 192.168.1.50 SMB 192.168.1.50 445 WIN-507CQFD84EB [*] Windows 10.0 Build 17763 x64 (name:WIN-507CQFD84EB) (domain:OFFENSIVE.LOCAL) (signing:True) (SMBv1:False) Domain Controller makinesinde signing:True olarak ayarlanmış." />
+<meta property="og:description" content="Temelde mDNS yapısının istismarı ile gelişir. Client bir paylaşıma erişmek için mDNS kullanılır. Çünkü client tarafında DNS ayarları yapılandırılmamıştır ve yerel ağda da bu işi üstlenecek bir DNS Server yapılandırılmamıştır. Hal böyle iken mDNS bu görevi üstlenir ve hub gibi tüm networke paylaşım adı olarak girilen verinin kimde olduğunu gönderir. Saldırgan bu trafiğe yanıt verir ve kurban credential girer. Girilen credsin NTLMv2 hali saldırgana iletilir. Bu hash bruteforce ile kırılabilir veya yerel ağda SMB relay yapılabilir. Sonucunda kullanıcı hashleri elde edilir ve networkte lateral movement gerçekleştirilir. Ancak buradaki önemli nokta, ntlmv2 hashin elde edildiği orijinal hedefe aynı hash ile saldırının gerçekleştirilmemesi. Çünkü istemci hangi challange yolladığını ve beklediği challange değerini saklamaktadır. İletilen challange değeri responder tarafından ayarlanabilir veya random bırakılabilir. Ancak bunu tutturmak yürüyerek aya gitmekten daha zordur. Dolayısı ile bir hedeften gelen hash verisini o hedef hariç tüm smb signing false olarak konfigüre edilen hedeflere relaylemek en mantıklısıdır. 1 2 1337@empire:~$ crackmapexec smb 192.168.1.50 SMB 192.168.1.50 445 WIN-507CQFD84EB [*] Windows 10.0 Build 17763 x64 (name:WIN-507CQFD84EB) (domain:OFFENSIVE.LOCAL) (signing:True) (SMBv1:False) Domain Controller makinesinde signing:True olarak ayarlanmış." />
+<link rel="canonical" href="http://localhost:4000/posts/responder-ve-ntlmrelay/" />
+<meta property="og:url" content="http://localhost:4000/posts/responder-ve-ntlmrelay/" />
 <meta property="og:site_name" content="Yugen" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2023-07-10T00:00:00+03:00" />
@@ -54,7 +54,7 @@
 <meta name="twitter:site" content="@empire_exec" />
 <meta name="twitter:creator" content="@empire_exec" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"yugen","url":"https://github.com/x67sv/"},"dateModified":"2023-07-10T00:00:00+03:00","datePublished":"2023-07-10T00:00:00+03:00","description":"Temelde mDNS yapısının istismarı ile gelişir. Client bir paylaşıma erişmek için mDNS kullanılır. Çünkü client tarafında DNS ayarları yapılandırılmamıştır ve yerel ağda da bu işi üstlenecek bir DNS Server yapılandırılmamıştır. Hal böyle iken mDNS bu görevi üstlenir ve hub gibi tüm networke paylaşım adı olarak girilen verinin kimde olduğunu gönderir. Saldırgan bu trafiğe yanıt verir ve kurban credential girer. Girilen credsin NTLMv2 hali saldırgana iletilir. Bu hash bruteforce ile kırılabilir veya yerel ağda SMB relay yapılabilir. Sonucunda kullanıcı hashleri elde edilir ve networkte lateral movement gerçekleştirilir. Ancak buradaki önemli nokta, ntlmv2 hashin elde edildiği orijinal hedefe aynı hash ile saldırının gerçekleştirilmemesi. Çünkü istemci hangi challenge yolladığını ve beklediği challaege değerini saklamaktadır. İletilen challenge değeri responder tarafından ayarlanabilir veya random bırakılabilir. Ancak bunu tutturmak yürüyerek aya gitmekten daha zordur. Dolayısı ile bir hedeften gelen hash verisini o hedef hariç tüm smb signing false olarak konfigüre edilen hedeflere relaylemek en mantıklısıdır. 1 2 1337@empire:~$ crackmapexec smb 192.168.1.50 SMB 192.168.1.50 445 WIN-507CQFD84EB [*] Windows 10.0 Build 17763 x64 (name:WIN-507CQFD84EB) (domain:OFFENSIVE.LOCAL) (signing:True) (SMBv1:False) Domain Controller makinesinde signing:True olarak ayarlanmış.","headline":"responder &amp; ntlmrelay","mainEntityOfPage":{"@type":"WebPage","@id":"http://192.168.1.40:4000/posts/responder-ve-ntlmrelay/"},"url":"http://192.168.1.40:4000/posts/responder-ve-ntlmrelay/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"yugen","url":"https://github.com/x67sv/"},"dateModified":"2023-07-10T00:00:00+03:00","datePublished":"2023-07-10T00:00:00+03:00","description":"Temelde mDNS yapısının istismarı ile gelişir. Client bir paylaşıma erişmek için mDNS kullanılır. Çünkü client tarafında DNS ayarları yapılandırılmamıştır ve yerel ağda da bu işi üstlenecek bir DNS Server yapılandırılmamıştır. Hal böyle iken mDNS bu görevi üstlenir ve hub gibi tüm networke paylaşım adı olarak girilen verinin kimde olduğunu gönderir. Saldırgan bu trafiğe yanıt verir ve kurban credential girer. Girilen credsin NTLMv2 hali saldırgana iletilir. Bu hash bruteforce ile kırılabilir veya yerel ağda SMB relay yapılabilir. Sonucunda kullanıcı hashleri elde edilir ve networkte lateral movement gerçekleştirilir. Ancak buradaki önemli nokta, ntlmv2 hashin elde edildiği orijinal hedefe aynı hash ile saldırının gerçekleştirilmemesi. Çünkü istemci hangi challange yolladığını ve beklediği challange değerini saklamaktadır. İletilen challange değeri responder tarafından ayarlanabilir veya random bırakılabilir. Ancak bunu tutturmak yürüyerek aya gitmekten daha zordur. Dolayısı ile bir hedeften gelen hash verisini o hedef hariç tüm smb signing false olarak konfigüre edilen hedeflere relaylemek en mantıklısıdır. 1 2 1337@empire:~$ crackmapexec smb 192.168.1.50 SMB 192.168.1.50 445 WIN-507CQFD84EB [*] Windows 10.0 Build 17763 x64 (name:WIN-507CQFD84EB) (domain:OFFENSIVE.LOCAL) (signing:True) (SMBv1:False) Domain Controller makinesinde signing:True olarak ayarlanmış.","headline":"responder &amp; ntlmrelay","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/responder-ve-ntlmrelay/"},"url":"http://localhost:4000/posts/responder-ve-ntlmrelay/"}</script>
 <!-- End Jekyll SEO tag -->
 
   
@@ -814,7 +814,7 @@
 </div> <!-- .post-meta -->
 
 <div class="post-content">
-  <p>Temelde mDNS yapısının istismarı ile gelişir. Client bir paylaşıma erişmek için <code class="language-plaintext highlighter-rouge">mDNS</code> kullanılır. Çünkü client tarafında <code class="language-plaintext highlighter-rouge">DNS</code> ayarları yapılandırılmamıştır ve yerel ağda da bu işi üstlenecek bir DNS Server yapılandırılmamıştır. Hal böyle iken mDNS bu görevi üstlenir ve hub gibi tüm networke paylaşım adı olarak girilen verinin kimde olduğunu gönderir. Saldırgan bu trafiğe yanıt verir ve kurban credential girer. Girilen credsin <code class="language-plaintext highlighter-rouge">NTLMv2</code> hali saldırgana iletilir. Bu hash bruteforce ile kırılabilir veya yerel ağda <code class="language-plaintext highlighter-rouge">SMB relay</code> yapılabilir. Sonucunda kullanıcı hashleri elde edilir ve networkte <code class="language-plaintext highlighter-rouge">lateral movement</code> gerçekleştirilir. Ancak buradaki önemli nokta, <code class="language-plaintext highlighter-rouge">ntlmv2</code> hashin elde edildiği orijinal hedefe aynı hash ile saldırının gerçekleştirilmemesi. Çünkü istemci hangi challenge yolladığını ve beklediği challenge değerini saklamaktadır. İletilen challenge değeri responder tarafından ayarlanabilir veya random bırakılabilir. <code class="language-plaintext highlighter-rouge">Ancak bunu tutturmak yürüyerek aya gitmekten daha zordur.</code> Dolayısı ile bir hedeften gelen hash verisini o hedef hariç tüm <code class="language-plaintext highlighter-rouge">smb signing false</code> olarak konfigüre edilen hedeflere relaylemek en mantıklısıdır.</p>
+  <p>Temelde mDNS yapısının istismarı ile gelişir. Client bir paylaşıma erişmek için <code class="language-plaintext highlighter-rouge">mDNS</code> kullanılır. Çünkü client tarafında <code class="language-plaintext highlighter-rouge">DNS</code> ayarları yapılandırılmamıştır ve yerel ağda da bu işi üstlenecek bir DNS Server yapılandırılmamıştır. Hal böyle iken mDNS bu görevi üstlenir ve hub gibi tüm networke paylaşım adı olarak girilen verinin kimde olduğunu gönderir. Saldırgan bu trafiğe yanıt verir ve kurban credential girer. Girilen credsin <code class="language-plaintext highlighter-rouge">NTLMv2</code> hali saldırgana iletilir. Bu hash bruteforce ile kırılabilir veya yerel ağda <code class="language-plaintext highlighter-rouge">SMB relay</code> yapılabilir. Sonucunda kullanıcı hashleri elde edilir ve networkte <code class="language-plaintext highlighter-rouge">lateral movement</code> gerçekleştirilir. Ancak buradaki önemli nokta, <code class="language-plaintext highlighter-rouge">ntlmv2</code> hashin elde edildiği orijinal hedefe aynı hash ile saldırının gerçekleştirilmemesi. Çünkü istemci hangi challange yolladığını ve beklediği challange değerini saklamaktadır. İletilen challange değeri responder tarafından ayarlanabilir veya random bırakılabilir. <code class="language-plaintext highlighter-rouge">Ancak bunu tutturmak yürüyerek aya gitmekten daha zordur.</code> Dolayısı ile bir hedeften gelen hash verisini o hedef hariç tüm <code class="language-plaintext highlighter-rouge">smb signing false</code> olarak konfigüre edilen hedeflere relaylemek en mantıklısıdır.</p>
 <div class="language-console highlighter-rouge"><div class="code-header">
         <span data-label-text="Console"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
@@ -1181,7 +1181,7 @@ SMB         192.168.1.37    445    DESKTOP-3QJSCMN  [*] Windows 10.0 Build 19041
 </blockquote>
 
 <ul>
-  <li>Bu girilen user ve parolalar doğru mu ? Diyelim bunları kırmak istiyoruz oturup normal bir hashin kırılması bile tamamen wordliste dayalıyken test esnasında bunun doğru olmadığı anlarda ne yapacağız ? RELAY RELAY RELAY</li>
+  <li>Bu girilen user ve parolalar doğru mu ? Diyelim bunları kırmak istiyoruz oturup normal bir hashin kırılması bile tamamen wordliste dayalı iken test esnasında bunun doğru olmadığı anlarda ne yapacağız ? Responder bunun doğruluğunu anlayamıyor.</li>
 </ul>
 
 <p>Responder ayarları yapılır</p>
@@ -2212,7 +2212,7 @@ Configuration for interface "Loopback Pseudo-Interface 1"
     
       
       <a
-        href="https://twitter.com/intent/tweet?text=responder%20&%20ntlmrelay%20-%20Yugen&url=http%3A%2F%2F192.168.1.40%3A4000%2Fposts%2Fresponder-ve-ntlmrelay%2F"
+        href="https://twitter.com/intent/tweet?text=responder%20&%20ntlmrelay%20-%20Yugen&url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fresponder-ve-ntlmrelay%2F"
         data-bs-toggle="tooltip"
         data-bs-placement="top"
         title="Twitter"
@@ -2225,7 +2225,7 @@ Configuration for interface "Loopback Pseudo-Interface 1"
     
       
       <a
-        href="https://www.facebook.com/sharer/sharer.php?title=responder%20&%20ntlmrelay%20-%20Yugen&u=http%3A%2F%2F192.168.1.40%3A4000%2Fposts%2Fresponder-ve-ntlmrelay%2F"
+        href="https://www.facebook.com/sharer/sharer.php?title=responder%20&%20ntlmrelay%20-%20Yugen&u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fresponder-ve-ntlmrelay%2F"
         data-bs-toggle="tooltip"
         data-bs-placement="top"
         title="Facebook"
@@ -2238,7 +2238,7 @@ Configuration for interface "Loopback Pseudo-Interface 1"
     
       
       <a
-        href="https://t.me/share/url?url=http%3A%2F%2F192.168.1.40%3A4000%2Fposts%2Fresponder-ve-ntlmrelay%2F&text=responder%20&%20ntlmrelay%20-%20Yugen"
+        href="https://t.me/share/url?url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fresponder-ve-ntlmrelay%2F&text=responder%20&%20ntlmrelay%20-%20Yugen"
         data-bs-toggle="tooltip"
         data-bs-placement="top"
         title="Telegram"
@@ -2360,60 +2360,6 @@ Configuration for interface "Loopback Pseudo-Interface 1"
     
     
     
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
   
     
     
@@ -2453,42 +2399,40 @@ Configuration for interface "Loopback Pseudo-Interface 1"
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
         
         
 
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
   
     
     
@@ -2585,7 +2529,88 @@ Configuration for interface "Loopback Pseudo-Interface 1"
     
     
     
+  
+    
+    
+    
+    
       
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
     
   
     
@@ -2745,6 +2770,16 @@ Configuration for interface "Loopback Pseudo-Interface 1"
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
         
         
@@ -2779,6 +2814,16 @@ Configuration for interface "Loopback Pseudo-Interface 1"
     
     
       
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     
@@ -2930,6 +2975,18 @@ Configuration for interface "Loopback Pseudo-Interface 1"
 
 
 
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
 
   
 
@@ -3266,60 +3323,6 @@ Configuration for interface "Loopback Pseudo-Interface 1"
     
     
     
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
   
     
     
@@ -3359,42 +3362,40 @@ Configuration for interface "Loopback Pseudo-Interface 1"
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
         
         
 
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
   
     
     
@@ -3491,7 +3492,88 @@ Configuration for interface "Loopback Pseudo-Interface 1"
     
     
     
+  
+    
+    
+    
+    
       
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
     
   
     
@@ -3651,6 +3733,16 @@ Configuration for interface "Loopback Pseudo-Interface 1"
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
         
         
@@ -3685,6 +3777,16 @@ Configuration for interface "Loopback Pseudo-Interface 1"
     
     
       
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     

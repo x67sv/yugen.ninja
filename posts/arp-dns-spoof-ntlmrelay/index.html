@@ -44,8 +44,8 @@
 <meta property="og:locale" content="en" />
 <meta name="description" content="Saldırgan, Arp spoof ile cihazların arp tablosunu değiştirir. Değiştirilen tabloda kendisini router olarak gösterir. Dns spoof ile spesifik A kayıtları spooflanır. karaca.com = 192.168.1.40 olacak şekilde mitmf.conf düzenlenir ve ntlmrelay ile ntlmv2 hashler relay edilerek credentiallar dump edilir. 192.168.1.40 saldırgan IP adresi" />
 <meta property="og:description" content="Saldırgan, Arp spoof ile cihazların arp tablosunu değiştirir. Değiştirilen tabloda kendisini router olarak gösterir. Dns spoof ile spesifik A kayıtları spooflanır. karaca.com = 192.168.1.40 olacak şekilde mitmf.conf düzenlenir ve ntlmrelay ile ntlmv2 hashler relay edilerek credentiallar dump edilir. 192.168.1.40 saldırgan IP adresi" />
-<link rel="canonical" href="http://192.168.1.40:4000/posts/arp-dns-spoof-ntlmrelay/" />
-<meta property="og:url" content="http://192.168.1.40:4000/posts/arp-dns-spoof-ntlmrelay/" />
+<link rel="canonical" href="http://localhost:4000/posts/arp-dns-spoof-ntlmrelay/" />
+<meta property="og:url" content="http://localhost:4000/posts/arp-dns-spoof-ntlmrelay/" />
 <meta property="og:site_name" content="Yugen" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2023-07-13T00:00:00+03:00" />
@@ -54,7 +54,7 @@
 <meta name="twitter:site" content="@empire_exec" />
 <meta name="twitter:creator" content="@empire_exec" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"yugen","url":"https://github.com/x67sv/"},"dateModified":"2023-07-13T00:00:00+03:00","datePublished":"2023-07-13T00:00:00+03:00","description":"Saldırgan, Arp spoof ile cihazların arp tablosunu değiştirir. Değiştirilen tabloda kendisini router olarak gösterir. Dns spoof ile spesifik A kayıtları spooflanır. karaca.com = 192.168.1.40 olacak şekilde mitmf.conf düzenlenir ve ntlmrelay ile ntlmv2 hashler relay edilerek credentiallar dump edilir. 192.168.1.40 saldırgan IP adresi","headline":"ARP &amp; DNS Spoof + Ntlmrelay","mainEntityOfPage":{"@type":"WebPage","@id":"http://192.168.1.40:4000/posts/arp-dns-spoof-ntlmrelay/"},"url":"http://192.168.1.40:4000/posts/arp-dns-spoof-ntlmrelay/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"yugen","url":"https://github.com/x67sv/"},"dateModified":"2023-07-13T00:00:00+03:00","datePublished":"2023-07-13T00:00:00+03:00","description":"Saldırgan, Arp spoof ile cihazların arp tablosunu değiştirir. Değiştirilen tabloda kendisini router olarak gösterir. Dns spoof ile spesifik A kayıtları spooflanır. karaca.com = 192.168.1.40 olacak şekilde mitmf.conf düzenlenir ve ntlmrelay ile ntlmv2 hashler relay edilerek credentiallar dump edilir. 192.168.1.40 saldırgan IP adresi","headline":"ARP &amp; DNS Spoof + Ntlmrelay","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/arp-dns-spoof-ntlmrelay/"},"url":"http://localhost:4000/posts/arp-dns-spoof-ntlmrelay/"}</script>
 <!-- End Jekyll SEO tag -->
 
   
@@ -790,7 +790,8 @@ Interface: 192.168.1.37 --- 0x3
 44
 45
 46
-</pre></td><td class="rouge-code"><pre><span class="go">
+</pre></td><td class="rouge-code"><pre><span class="go">ntlmrelayx aktif edilir
+
 </span><span class="gp">1337@empire:~$</span><span class="w"> </span>ntlmrelayx.py <span class="nt">-t</span> smb://192.168.1.27 <span class="nt">-smb2support</span>               
 <span class="go">Impacket v0.10.1.dev1+20230629.121115.b5dab2df - Copyright 2022 Fortra
 
@@ -898,7 +899,7 @@ test:1002:aad3b435b51404eeaad3b435b51404ee:7a21990fcd3d7123454632143d5f:::
     
       
       <a
-        href="https://twitter.com/intent/tweet?text=ARP%20&%20DNS%20Spoof%20+%20Ntlmrelay%20-%20Yugen&url=http%3A%2F%2F192.168.1.40%3A4000%2Fposts%2Farp-dns-spoof-ntlmrelay%2F"
+        href="https://twitter.com/intent/tweet?text=ARP%20&%20DNS%20Spoof%20+%20Ntlmrelay%20-%20Yugen&url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Farp-dns-spoof-ntlmrelay%2F"
         data-bs-toggle="tooltip"
         data-bs-placement="top"
         title="Twitter"
@@ -911,7 +912,7 @@ test:1002:aad3b435b51404eeaad3b435b51404ee:7a21990fcd3d7123454632143d5f:::
     
       
       <a
-        href="https://www.facebook.com/sharer/sharer.php?title=ARP%20&%20DNS%20Spoof%20+%20Ntlmrelay%20-%20Yugen&u=http%3A%2F%2F192.168.1.40%3A4000%2Fposts%2Farp-dns-spoof-ntlmrelay%2F"
+        href="https://www.facebook.com/sharer/sharer.php?title=ARP%20&%20DNS%20Spoof%20+%20Ntlmrelay%20-%20Yugen&u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Farp-dns-spoof-ntlmrelay%2F"
         data-bs-toggle="tooltip"
         data-bs-placement="top"
         title="Facebook"
@@ -924,7 +925,7 @@ test:1002:aad3b435b51404eeaad3b435b51404ee:7a21990fcd3d7123454632143d5f:::
     
       
       <a
-        href="https://t.me/share/url?url=http%3A%2F%2F192.168.1.40%3A4000%2Fposts%2Farp-dns-spoof-ntlmrelay%2F&text=ARP%20&%20DNS%20Spoof%20+%20Ntlmrelay%20-%20Yugen"
+        href="https://t.me/share/url?url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Farp-dns-spoof-ntlmrelay%2F&text=ARP%20&%20DNS%20Spoof%20+%20Ntlmrelay%20-%20Yugen"
         data-bs-toggle="tooltip"
         data-bs-placement="top"
         title="Telegram"
@@ -1046,60 +1047,6 @@ test:1002:aad3b435b51404eeaad3b435b51404ee:7a21990fcd3d7123454632143d5f:::
     
     
     
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
   
     
     
@@ -1139,42 +1086,40 @@ test:1002:aad3b435b51404eeaad3b435b51404ee:7a21990fcd3d7123454632143d5f:::
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
         
         
 
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
   
     
     
@@ -1271,7 +1216,88 @@ test:1002:aad3b435b51404eeaad3b435b51404ee:7a21990fcd3d7123454632143d5f:::
     
     
     
+  
+    
+    
+    
+    
       
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
     
   
     
@@ -1431,6 +1457,16 @@ test:1002:aad3b435b51404eeaad3b435b51404ee:7a21990fcd3d7123454632143d5f:::
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
         
         
@@ -1465,6 +1501,16 @@ test:1002:aad3b435b51404eeaad3b435b51404ee:7a21990fcd3d7123454632143d5f:::
     
     
       
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     
@@ -1611,6 +1657,18 @@ test:1002:aad3b435b51404eeaad3b435b51404ee:7a21990fcd3d7123454632143d5f:::
 
 
 
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
 
   
 
@@ -1947,60 +2005,6 @@ test:1002:aad3b435b51404eeaad3b435b51404ee:7a21990fcd3d7123454632143d5f:::
     
     
     
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
   
     
     
@@ -2040,42 +2044,40 @@ test:1002:aad3b435b51404eeaad3b435b51404ee:7a21990fcd3d7123454632143d5f:::
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
         
         
 
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
   
     
     
@@ -2172,7 +2174,88 @@ test:1002:aad3b435b51404eeaad3b435b51404ee:7a21990fcd3d7123454632143d5f:::
     
     
     
+  
+    
+    
+    
+    
       
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
     
   
     
@@ -2332,6 +2415,16 @@ test:1002:aad3b435b51404eeaad3b435b51404ee:7a21990fcd3d7123454632143d5f:::
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
         
         
@@ -2366,6 +2459,16 @@ test:1002:aad3b435b51404eeaad3b435b51404ee:7a21990fcd3d7123454632143d5f:::
     
     
       
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     

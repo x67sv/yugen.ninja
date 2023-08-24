@@ -44,8 +44,8 @@
 <meta property="og:locale" content="en" />
 <meta name="description" content="ASLR ve DEP korumalarının kapalı olması durumunda stack e shellcode yüklenip çalıştırılabilir. ASLR, uygulamaların fonksiyon adreslerinin rastgele belirlenmesini ve bu rastgeleliğin sürekli devam etmesini sağlayan izolasyon mekanizmasıdır. DEP, stack üzerine veri yazılmasını/çalıştırılmasını engelleyen mekanizma. ASLR ve DEP korumalarının devre dışı olması durumunda genel olarak 2 şekilde stack e veri yazılabilir. Overflow-based zafiyetler" />
 <meta property="og:description" content="ASLR ve DEP korumalarının kapalı olması durumunda stack e shellcode yüklenip çalıştırılabilir. ASLR, uygulamaların fonksiyon adreslerinin rastgele belirlenmesini ve bu rastgeleliğin sürekli devam etmesini sağlayan izolasyon mekanizmasıdır. DEP, stack üzerine veri yazılmasını/çalıştırılmasını engelleyen mekanizma. ASLR ve DEP korumalarının devre dışı olması durumunda genel olarak 2 şekilde stack e veri yazılabilir. Overflow-based zafiyetler" />
-<link rel="canonical" href="http://192.168.1.40:4000/posts/backdooring/" />
-<meta property="og:url" content="http://192.168.1.40:4000/posts/backdooring/" />
+<link rel="canonical" href="http://localhost:4000/posts/backdooring/" />
+<meta property="og:url" content="http://localhost:4000/posts/backdooring/" />
 <meta property="og:site_name" content="Yugen" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2023-07-14T00:00:00+03:00" />
@@ -54,7 +54,7 @@
 <meta name="twitter:site" content="@empire_exec" />
 <meta name="twitter:creator" content="@empire_exec" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"yugen","url":"https://github.com/x67sv/"},"dateModified":"2023-07-14T00:00:00+03:00","datePublished":"2023-07-14T00:00:00+03:00","description":"ASLR ve DEP korumalarının kapalı olması durumunda stack e shellcode yüklenip çalıştırılabilir. ASLR, uygulamaların fonksiyon adreslerinin rastgele belirlenmesini ve bu rastgeleliğin sürekli devam etmesini sağlayan izolasyon mekanizmasıdır. DEP, stack üzerine veri yazılmasını/çalıştırılmasını engelleyen mekanizma. ASLR ve DEP korumalarının devre dışı olması durumunda genel olarak 2 şekilde stack e veri yazılabilir. Overflow-based zafiyetler","headline":"Backdooring","mainEntityOfPage":{"@type":"WebPage","@id":"http://192.168.1.40:4000/posts/backdooring/"},"url":"http://192.168.1.40:4000/posts/backdooring/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"yugen","url":"https://github.com/x67sv/"},"dateModified":"2023-07-14T00:00:00+03:00","datePublished":"2023-07-14T00:00:00+03:00","description":"ASLR ve DEP korumalarının kapalı olması durumunda stack e shellcode yüklenip çalıştırılabilir. ASLR, uygulamaların fonksiyon adreslerinin rastgele belirlenmesini ve bu rastgeleliğin sürekli devam etmesini sağlayan izolasyon mekanizmasıdır. DEP, stack üzerine veri yazılmasını/çalıştırılmasını engelleyen mekanizma. ASLR ve DEP korumalarının devre dışı olması durumunda genel olarak 2 şekilde stack e veri yazılabilir. Overflow-based zafiyetler","headline":"Backdooring","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/backdooring/"},"url":"http://localhost:4000/posts/backdooring/"}</script>
 <!-- End Jekyll SEO tag -->
 
   
@@ -2592,7 +2592,7 @@ garabetpc\garabet
     
       
       <a
-        href="https://twitter.com/intent/tweet?text=Backdooring%20-%20Yugen&url=http%3A%2F%2F192.168.1.40%3A4000%2Fposts%2Fbackdooring%2F"
+        href="https://twitter.com/intent/tweet?text=Backdooring%20-%20Yugen&url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fbackdooring%2F"
         data-bs-toggle="tooltip"
         data-bs-placement="top"
         title="Twitter"
@@ -2605,7 +2605,7 @@ garabetpc\garabet
     
       
       <a
-        href="https://www.facebook.com/sharer/sharer.php?title=Backdooring%20-%20Yugen&u=http%3A%2F%2F192.168.1.40%3A4000%2Fposts%2Fbackdooring%2F"
+        href="https://www.facebook.com/sharer/sharer.php?title=Backdooring%20-%20Yugen&u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fbackdooring%2F"
         data-bs-toggle="tooltip"
         data-bs-placement="top"
         title="Facebook"
@@ -2618,7 +2618,7 @@ garabetpc\garabet
     
       
       <a
-        href="https://t.me/share/url?url=http%3A%2F%2F192.168.1.40%3A4000%2Fposts%2Fbackdooring%2F&text=Backdooring%20-%20Yugen"
+        href="https://t.me/share/url?url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fbackdooring%2F&text=Backdooring%20-%20Yugen"
         data-bs-toggle="tooltip"
         data-bs-placement="top"
         title="Telegram"
@@ -2740,60 +2740,6 @@ garabetpc\garabet
     
     
     
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
   
     
     
@@ -2833,42 +2779,40 @@ garabetpc\garabet
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
         
         
 
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
   
     
     
@@ -2965,7 +2909,88 @@ garabetpc\garabet
     
     
     
+  
+    
+    
+    
+    
       
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
     
   
     
@@ -3125,6 +3150,16 @@ garabetpc\garabet
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
         
         
@@ -3159,6 +3194,16 @@ garabetpc\garabet
     
     
       
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     
@@ -3305,6 +3350,18 @@ garabetpc\garabet
 
 
 
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
 
   
 
@@ -3561,12 +3618,13 @@ garabetpc\garabet
   
 
   
-    <div
-      class="btn btn-outline-primary disabled"
+    <a
+      href="/posts/directory-scanner-nuclei-template/"
+      class="btn btn-outline-primary"
       prompt="Newer"
     >
-      <p>-</p>
-    </div>
+      <p>Directory Scanner Nuclei Template</p>
+    </a>
   
 </div>
 
@@ -3651,60 +3709,6 @@ garabetpc\garabet
     
     
     
-      
-        
-        
-
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
   
     
     
@@ -3744,42 +3748,40 @@ garabetpc\garabet
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
         
         
 
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-  
-    
-    
-    
-    
-      
-    
   
     
     
@@ -3876,7 +3878,88 @@ garabetpc\garabet
     
     
     
+  
+    
+    
+    
+    
       
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
     
   
     
@@ -4036,6 +4119,16 @@ garabetpc\garabet
     
     
     
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
       
         
         
@@ -4070,6 +4163,16 @@ garabetpc\garabet
     
     
       
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
     
   
     
