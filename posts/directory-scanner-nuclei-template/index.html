@@ -53,6 +53,7 @@
 <meta property="twitter:title" content="Directory Scanner Nuclei Template" />
 <meta name="twitter:site" content="@empire_exec" />
 <meta name="twitter:creator" content="@empire_exec" />
+<meta name="google-site-verification" content="google7e2850914a45b705.html" />
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"yugen","url":"https://github.com/x67sv/"},"dateModified":"2023-08-24T00:00:00+03:00","datePublished":"2023-08-24T00:00:00+03:00","description":"Dirbuster, ffuf veya diğer dizin tarama araçlarının yaptığı işin aynısı olacak. Tek fark nuclei yapısı altında yaml dosyası ve wordlist kullanarak yapacağız. Hah bir de recursive degil su an","headline":"Directory Scanner Nuclei Template","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/posts/directory-scanner-nuclei-template/"},"url":"http://localhost:4000/posts/directory-scanner-nuclei-template/"}</script>
 <!-- End Jekyll SEO tag -->
@@ -530,7 +531,7 @@
 
 <span class="na">requests</span><span class="pi">:</span>
   <span class="pi">-</span> <span class="na">method</span><span class="pi">:</span> <span class="s">GET</span>
-    <span class="na">path</span><span class="s">{{BaseURL}}/{{fuzz}}"</span>
+    <span class="na">path</span><span class="pi">:</span>
       <span class="pi">-</span> <span class="s2">"</span><span class="s">/"</span> 
 
     <span class="na">payloads</span><span class="pi">:</span>
