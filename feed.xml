@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Yugen</title>
   <subtitle>?</subtitle>
-  <updated>2023-08-25T18:32:30+03:00</updated>
+  <updated>2023-08-26T03:10:05+03:00</updated>
   <author>
     <name></name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,106 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Promiscuity Detection /w ICMP &amp; Scapy</title>
+    <link href="http://localhost:4000/posts/promiscuity-detection-w-arp-scapy/" rel="alternate" type="text/html" title="Promiscuity Detection /w ICMP &amp;amp; Scapy" />
+    <published>2023-08-26T00:00:00+03:00</published>
+  
+    <updated>2023-08-26T00:00:00+03:00</updated>
+  
+    <id>http://localhost:4000/posts/promiscuity-detection-w-arp-scapy/</id>
+    <content src="http://localhost:4000/posts/promiscuity-detection-w-arp-scapy/" />
+    <author>
+      <name>who</name>
+    </author>
+
+  
+    
+    <category term="internal" />
+    
+    <category term="mitigate" />
+    
+    <category term="recon" />
+    
+    <category term="Dev" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Yerel ağda network adaptörünü promisc modda olan cihazları tespit eder, yani biri dümdüz bir şeyler kaçırıyor mu ona bakacağız.
+
+
+  Interface promisc modda iken, broadcast paketlerine benzer HW adreslerini kabul eder. Bu tamamen kernel ile ilgili bir durumdur. Windows için bu adres FF:FF:00:00:00:00 iken, Linux için ise FF:FF:FF:FF:FF:FE olmaktadır.
+
+
+from scapy.all import *
+blocks = ["10.0.0.0...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Layer 2 Recon /w Scapy</title>
+    <link href="http://localhost:4000/posts/layer-2-recon-w-scapy/" rel="alternate" type="text/html" title="Layer 2 Recon /w Scapy" />
+    <published>2023-08-26T00:00:00+03:00</published>
+  
+    <updated>2023-08-26T00:00:00+03:00</updated>
+  
+    <id>http://localhost:4000/posts/layer-2-recon-w-scapy/</id>
+    <content src="http://localhost:4000/posts/layer-2-recon-w-scapy/" />
+    <author>
+      <name>who</name>
+    </author>
+
+  
+    
+    <category term="internal" />
+    
+    <category term="Dev" />
+    
+    <category term="recon" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Yerel ağda Private IP Blokları üzerinden tarama yapılır masscan, nmap, hping vb işi uzatır. Bunların yerine scapy ile package craft edip networke salacağız.
+
+
+  24-bit block	10.0.0.0 – 10.255.255.255	10.0.0.0/8 (255.0.0.0)
+
+
+
+  20-bit block	172.16.0.0 – 172.31.255.255	172.16.0.0/12 (255.240.0.0)
+
+
+
+  16-bit block	192.168.0.0 – 192.168.255.255	192.168.0.0/16 (255.255.0.0)
+
+
+
+  ARP Broadcast HW a...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -145,110 +245,6 @@ info:
   DEP,  stack üzerine veri yazılmasını/çalıştırılmasını engelleyen mekanizma.
 
 ASLR ve DEP korumalarının devre dışı olması durumunda genel olarak 2 şeki...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Application Shimming</title>
-    <link href="http://localhost:4000/posts/application-shimming/" rel="alternate" type="text/html" title="Application Shimming" />
-    <published>2023-07-14T00:00:00+03:00</published>
-  
-    <updated>2023-07-14T00:00:00+03:00</updated>
-  
-    <id>http://localhost:4000/posts/application-shimming/</id>
-    <content src="http://localhost:4000/posts/application-shimming/" />
-    <author>
-      <name>who</name>
-    </author>
-
-  
-    
-    <category term="persistence" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      Compatibility Administrator aracı ile yapılır. Gösterilen bir uygulamaya Injectdll yardımcısı ile dll yüklenir. Uygulama çalışırken eklenen dll ile birlikte yürütülür.
-
-
-
-  Uygulama seçilir
-
-
-
-
-
-  Parameters ile DLL yolu seçilir
-
-
-
-
-
-
-  Unselect all ile sağdaki liste kaldırılır
-
-
-
-
-  Install ile kurulur
-
-
-
-
-
-1337@empire:~$ msfconsole
-                                                  
-          ...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>ARP &amp; DNS Spoof + Ntlmrelay</title>
-    <link href="http://localhost:4000/posts/arp-dns-spoof-ntlmrelay/" rel="alternate" type="text/html" title="ARP &amp;amp; DNS Spoof + Ntlmrelay" />
-    <published>2023-07-13T00:00:00+03:00</published>
-  
-    <updated>2023-07-13T00:00:00+03:00</updated>
-  
-    <id>http://localhost:4000/posts/arp-dns-spoof-ntlmrelay/</id>
-    <content src="http://localhost:4000/posts/arp-dns-spoof-ntlmrelay/" />
-    <author>
-      <name>who</name>
-    </author>
-
-  
-    
-    <category term="internal" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      Saldırgan, Arp spoof ile cihazların arp tablosunu değiştirir. Değiştirilen tabloda kendisini router olarak gösterir. Dns spoof ile spesifik A kayıtları spooflanır. karaca.com = 192.168.1.40  olacak şekilde  mitmf.conf düzenlenir ve ntlmrelay ile ntlmv2 hashler relay edilerek credentiallar dump edilir.
-
-  192.168.1.40 saldırgan IP adresi
-
-
-
-  Tekniğin çalışabilmesi için hedef cihazların DNS ayar...
     </summary>
   
 
