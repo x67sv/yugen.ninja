@@ -18,7 +18,7 @@
   },
   
   {
-    "title": "Layer 2 Recon /w Scapy",
+    "title": "Layer 2 Recon /w ARP & Scapy",
     "url": "/posts/layer-2-recon-w-scapy/",
     "categories": "internal, Dev, recon",
     "tags": "ARP, Layer2",
