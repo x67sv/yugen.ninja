@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Yugen</title>
   <subtitle>?</subtitle>
-  <updated>2023-08-26T03:18:35+03:00</updated>
+  <updated>2023-09-11T01:22:28+03:00</updated>
   <author>
     <name></name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,52 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Malware Development 1: Ransomware Algoritması</title>
+    <link href="http://localhost:4000/posts/malware-development-1-ransomware-algoritmasi/" rel="alternate" type="text/html" title="Malware Development 1: Ransomware Algoritması" />
+    <published>2023-09-11T00:00:00+03:00</published>
+  
+    <updated>2023-09-11T00:00:00+03:00</updated>
+  
+    <id>http://localhost:4000/posts/malware-development-1-ransomware-algoritmasi/</id>
+    <content src="http://localhost:4000/posts/malware-development-1-ransomware-algoritmasi/" />
+    <author>
+      <name>who</name>
+    </author>
+
+  
+    
+    <category term="Dev" />
+    
+    <category term="Malware" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      
+  
+    C diskinde bulunan tüm dosyalar recursive olarak taratılır.
+    Elde edilen dosya ve dizinler, belirlenen encryption key ile XOR algoritması kullanılarak şifrelenir.
+    Encryption sonucunda orjinal dosyalar silinir.
+    Tekrar çalıştırılması durumunda mevcut encrypted veriler üzerinde değişiklik yapılmaz. Yeni dosya eklenmişse 1. adıma dönülür.
+  
+
+
+
+  Bu proje tamamen eğitim amaçlıdır...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -197,54 +243,17 @@ C:\Users\test\Desktop\sc create kotu_isler start=auto binpath=%
   Wordlist için Seclist kullanılabilir.
 
 
-empire➜  nuclei  ᐅ  cat directory-scanner.yaml
 id: DirectoryScanner # yaml ID
 
 info:
   name: Directory Scanner 
   author: Yugen
-  severity: low # sonuclarin onem ...
-    </summary>
-  
+  severity: low # sonuclarin onem derecesi
 
-  </entry>
-
-  
-  <entry>
-    <title>Backdooring</title>
-    <link href="http://localhost:4000/posts/backdooring/" rel="alternate" type="text/html" title="Backdooring" />
-    <published>2023-07-14T00:00:00+03:00</published>
-  
-    <updated>2023-07-14T00:00:00+03:00</updated>
-  
-    <id>http://localhost:4000/posts/backdooring/</id>
-    <content src="http://localhost:4000/posts/backdooring/" />
-    <author>
-      <name>who</name>
-    </author>
-
-  
-    
-    <category term="persistence" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      ASLR ve DEP korumalarının kapalı olması durumunda stack e shellcode yüklenip çalıştırılabilir.
-
-  ASLR, uygulamaların fonksiyon adreslerinin rastgele belirlenmesini ve bu rastgeleliğin sürekli devam etmesini sağlayan izolasyon mekanizmasıdır.
-
-
-  DEP,  stack üzerine veri yazılmasını/çalıştırılmasını engelleyen mekanizma.
-
-ASLR ve DEP korumalarının devre dışı olması durumunda genel olarak 2 şeki...
+requests:
+  - method: GET
+    path:
+ ...
     </summary>
   
 

