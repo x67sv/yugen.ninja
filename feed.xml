@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Yugen</title>
   <subtitle>?</subtitle>
-  <updated>2023-09-11T11:06:41+03:00</updated>
+  <updated>2023-09-12T21:21:43+03:00</updated>
   <author>
     <name></name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,42 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Whatsapp &amp; Telegram Aramaları ile Yer / IP Öğrenmek?</title>
+    <link href="http://localhost:4000/posts/whatsapp-telegram-aramalari-ile-yer-ip-ogrenmek/" rel="alternate" type="text/html" title="Whatsapp &amp;amp; Telegram Aramaları ile Yer / IP Öğrenmek?" />
+    <published>2023-09-12T00:00:00+03:00</published>
+  
+    <updated>2023-09-12T00:00:00+03:00</updated>
+  
+    <id>http://localhost:4000/posts/whatsapp-telegram-aramalari-ile-yer-ip-ogrenmek/</id>
+    <content src="http://localhost:4000/posts/whatsapp-telegram-aramalari-ile-yer-ip-ogrenmek/" />
+    <author>
+      <name>who</name>
+    </author>
+
+  
+    
+    <category term="Intel" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Telegram ve Whatsapp üzerinden yapılan aramaların ipv4 katmanında XOR-RELAYED-ADDRESS üzerinden client’ın bağlandığı IP ve port bilgisini barındırır. Bunu tespit edebilmek için kişinin çağrıya yanıt vermesi yeterlidir. Aramayı yapan kişi, arama yapmadan önce trafiğini dinler ve trafik içeriğinde aradığı kişinin public IP adresini tespit eder. Bu sayede yaklaşık konum elde edilebilir.
+
+Çağrı ile...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -202,58 +238,6 @@ blocks = ["10.0.0.0...
 
 C:\Users\test\Desktop\sc create kotu_isler start=auto binpath=%
 [...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Directory Scanner Nuclei Template</title>
-    <link href="http://localhost:4000/posts/directory-scanner-nuclei-template/" rel="alternate" type="text/html" title="Directory Scanner Nuclei Template" />
-    <published>2023-08-24T00:00:00+03:00</published>
-  
-    <updated>2023-08-24T00:00:00+03:00</updated>
-  
-    <id>http://localhost:4000/posts/directory-scanner-nuclei-template/</id>
-    <content src="http://localhost:4000/posts/directory-scanner-nuclei-template/" />
-    <author>
-      <name>who</name>
-    </author>
-
-  
-    
-    <category term="Dev" />
-    
-    <category term="Web" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      Dirbuster, ffuf veya diğer dizin tarama araçlarının yaptığı işin aynısı olacak. Tek fark nuclei yapısı altında yaml dosyası ve wordlist kullanarak yapacağız. Hah bir de recursive degil su an
-
-
-  Wordlist için Seclist kullanılabilir.
-
-
-id: DirectoryScanner # yaml ID
-
-info:
-  name: Directory Scanner 
-  author: Yugen
-  severity: low # sonuclarin onem derecesi
-
-requests:
-  - method: GET
-    path:
- ...
     </summary>
   
 
