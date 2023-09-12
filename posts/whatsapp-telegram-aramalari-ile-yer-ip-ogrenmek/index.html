@@ -796,7 +796,6 @@
 6
 </pre></td><td class="rouge-code"><pre><span class="c">#!/bin/bash</span>
 tshark <span class="nt">-F</span> pcap <span class="nt">-w</span> test.pcap&amp;
-<span class="nb">echo</span> <span class="s1">'call whatsapp or telegram'</span>
 <span class="nv">my_ip</span><span class="o">=</span><span class="si">$(</span>curl <span class="nt">-s</span> api.ipify.org<span class="si">)</span>
 <span class="nb">echo</span> <span class="s2">"Your Public IP: </span><span class="nv">$my_ip</span><span class="s2">"</span>
 tshark <span class="nt">-r</span> test.pcap <span class="nt">-V</span> | <span class="nb">grep</span> <span class="nt">-E</span> <span class="s2">"([0-9]{1,3}[</span><span class="se">\.</span><span class="s2">]){3}[0-9]{1,3}"</span> | <span class="nb">grep</span> <span class="s2">"Destination</span><span class="se">\|</span><span class="s2">XOR"</span> | <span class="nb">awk</span> <span class="s1">'{print $3}'</span> | <span class="nb">sort</span> <span class="nt">-n</span> | <span class="nb">uniq</span> | <span class="nb">grep</span> <span class="nt">-v</span> <span class="nv">$my_ip</span>
